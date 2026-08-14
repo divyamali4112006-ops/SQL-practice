@@ -10,3 +10,9 @@ CREATE TABLE student
 
 -- to display table
 SELECT *FROM student;
+
+
+-- INSERT VALUE IN TABLE
+INSERT INTO student
+VALUES(
+ 22,DIVYA,19,RAJASTHAN);
