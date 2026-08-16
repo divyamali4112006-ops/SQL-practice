@@ -19,4 +19,8 @@ VALUES(
 
 -- TO DELETE INTIRE TABLE
 
-DROP student;
+DROP TABLE student;
+
+-- to delete info of the table
+DELETE FROM student
+WHERE id=5;
