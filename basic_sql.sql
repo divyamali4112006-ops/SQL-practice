@@ -24,3 +24,10 @@ DROP TABLE student;
 -- to delete info of the table
 DELETE FROM student
 WHERE id=5;
+
+
+-- inner join 
+SELECT columns  
+FROM table1  
+INNER JOIN table2 
+ON table1.column = table2.column; 
