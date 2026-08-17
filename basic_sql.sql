@@ -26,6 +26,11 @@ DELETE FROM student
 WHERE id=5;
 
 
+-- right join
+SELECT Customers.CustomerName, Orders.Product  
+FROM Customers 
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;  
+
 -- inner join 
 SELECT columns  
 FROM table1  
