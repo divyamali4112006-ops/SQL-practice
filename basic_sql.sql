@@ -29,10 +29,17 @@ WHERE id=5;
 -- right join
 SELECT Customers.CustomerName, Orders.Product  
 FROM Customers 
-LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;  
+RIGHT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;  
 
 -- inner join 
 SELECT columns  
 FROM table1  
 INNER JOIN table2 
 ON table1.column = table2.column; 
+
+
+-- left join
+SELECT Customers.CustomerName, Orders.Product  
+FROM Customers 
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;  
+
