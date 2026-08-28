@@ -40,3 +40,5 @@ ADD COLUMN city varchar(60) DEFAULT "Gurgaon";
 ALTER TABLE teacher
 drop column ctc;
     
+-- to select the query
+SELECT *FROM teacher
