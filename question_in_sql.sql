@@ -19,12 +19,16 @@ values
 (18,"chetan","chemistry",45000),
 (9,"divya","physics",75000);
 
+-- select column which have more than 55k salary
+
+SELECT *FROM teacher
+WHERE salary>55000;
 
 -- rename the column
  ALTER TABLE teacher
 CHANGE COLUMN salary ctc int;
--- update salary 
 
+-- update salary 
 UPDATE  teacher
 SET ctc = ctc+( ctc*0.25)
 WHERE id>0;
