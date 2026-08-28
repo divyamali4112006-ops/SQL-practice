@@ -19,3 +19,24 @@ values
 (18,"chetan","chemistry",45000),
 (9,"divya","physics",75000);
 
+
+-- rename the column
+ ALTER TABLE teacher
+CHANGE COLUMN salary ctc int;
+-- update salary 
+
+UPDATE  teacher
+SET ctc = ctc+( ctc*0.25)
+WHERE id>0;
+
+
+set SQL_SAFE_UPDATES =0;
+
+-- add  new column
+ALTER TABLE teacher
+ADD COLUMN city varchar(60) DEFAULT "Gurgaon";
+
+-- delete column name ctc
+ALTER TABLE teacher
+drop column ctc;
+    
